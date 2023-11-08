@@ -171,6 +171,7 @@ export async function fetchInvoiceById(id: string) {
       amount: invoice.amount / 100,
     }));
 
+    console.log(id);
     return invoice[0];
   } catch (error) {
     console.error("Database Error:", error);
